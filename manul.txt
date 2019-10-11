@@ -1,3 +1,18 @@
- :~/HomeWork2/reactdeepstudy
+~/HomeWork2/reactdeepstudy
 
-handleRout
+
+===================
+App.js
+ state={
+    pagevalue:0,
+    searchtext:'',
+    searchnumber:0,
+    tileData:[],
+    jsphd:[]       
+  }
+
+
+
+<BrowserRouter>
+   <Route/> /
+   
