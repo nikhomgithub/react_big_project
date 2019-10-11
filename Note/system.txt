@@ -1,0 +1,10 @@
+style functions คือ ฟังก์ชัน ช่วยในการออกแบบ โดยมีหัวข้อดังนี้
+เข้าถึง theme values จาก component props
+ช่วยให้ ui consistency
+เขียนแบบ responsive ง่ายๆ
+ทำงานร่วมกับ theme object อื่นๆ
+ทำงานร่วมกับ css และ js พื้นฐาน
+ไฟล์ขนาดเล็กมาก
+รันได้เร็วมาก
+
+ฟังก์ชันคือ  ({theme,...style})=> style

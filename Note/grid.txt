@@ -1,0 +1,7 @@
+Grid 
+How it work
+พื้นฐานมาจาก flex box
+มีสองประเภทย่อย คือ container , items
+item  ความกว้างตั้งเป็น percent  จึงปรับตามขนาดหน้าจอได้
+items มี padding  จึงปรับขนาดตาม หน้าจอได้ 
+ิbreak point มี xs sm md lg xt
