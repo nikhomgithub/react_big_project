@@ -9,6 +9,7 @@
                  
     searchtext:'', searchnumber:0,  <= handleSearch() <= <Navbar/> 
     tileData:[], <= handleSearch ()  
+    
     jsphd:[] <= handleLosdjson()
              => handleJSPHD() 
   }
@@ -19,23 +20,27 @@
                  
 
 <App/> render()
+<section/>
+<Navbar $pagevalue,handleChange(), $searchtext,$searchnumber,handleSearch()/>
+<Tabbar $pagevalue,hanldeChange() />
 ===> handleRoute()=>{get $pagevalue , 
-                     switch & redirect to & <BrowserRouter><Route>
-                     /,
-                     /form,
-                     /contact
-                     /basichook
-                     /old
-                     /advanceform,
-                     /materialcss,
-                     /dom
-    
+                     switch & redirect to & 
+                                      <BrowserRouter><Route>
+                     0  / ===>            <Pixagridlist $titleData/>
+                     1  /form ===>        <FormView $jsphd handleJSPJD() handleLoadJson>   
+                     2  /contact ===>     <Component/>
+                     3  /basichook ===>   <Basichook/>
+                     4  /old  ===>        <Test1/>
+                     5  /advanceform ===> <AdvanceFormView/>
+                     6  /materialcss ===> <Materialcss/>     
+                     7  /dom
+<button/>
+
+
+
 
 <Navbar/> ===> <App/>
 ===> handleSearch()=>{get $searchtext,$searchnumber => get https://pixabay.com => set $tileData}  
-
-
-
 
 
 <BrowserRouter>
