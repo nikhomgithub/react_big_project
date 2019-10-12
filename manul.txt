@@ -44,6 +44,11 @@
 <button/>
 ==================================================================
 <FormView/>   from '@material-ui/core  import Grid,TextField,Card,Button,{ makeStyles }
+<AdvanceFormView>
+
+state    //local state for form , is required
+====> handleChange   //To change local stated, is required
+
 
 ===>useStyle()=>{makeStyles()}
 <Button onClick=handleLoadJson() > 
@@ -67,6 +72,10 @@ $jsphd.maps m
       <cardContent><Typography>
       <CardActions><IconButton>
       <Collapse/><CardContent>
+====================================================================
+<Test1.js/>   from '@material-ui/core  import Grid,MediaCard{ makeStyles }
+====================================================================
+
 
 
 
