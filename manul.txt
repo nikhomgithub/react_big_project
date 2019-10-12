@@ -2,14 +2,39 @@
 
 
 ===================
-App.js
- state={
-    pagevalue:0,
-    searchtext:'',
-    searchnumber:0,
-    tileData:[],
-    jsphd:[]       
+<App/>
+  state={
+    pagevalue:0, <= handleChange() <= <Navbar/>,<Tabbar/>
+                 => handleRoute() => <App/>
+                 
+    searchtext:'', searchnumber:0,  <= handleSearch() <= <Navbar/> 
+    tileData:[], <= handleSearch ()  
+    jsphd:[] <= handleLosdjson()
+             => handleJSPHD() 
   }
+
+
+<Navbar/>,<Tabbar/> ===> <App/>
+===> handleChange()=>{set $pagevalue }
+                 
+
+<App/> render()
+===> handleRoute()=>{get $pagevalue , 
+                     switch & redirect to & <BrowserRouter><Route>
+                     /,
+                     /form,
+                     /contact
+                     /basichook
+                     /old
+                     /advanceform,
+                     /materialcss,
+                     /dom
+    
+
+<Navbar/> ===> <App/>
+===> handleSearch()=>{get $searchtext,$searchnumber => get https://pixabay.com => set $tileData}  
+
+
 
 
 
