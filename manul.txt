@@ -75,9 +75,20 @@ $jsphd.maps m
 ====================================================================
 <Test1.js/>   from '@material-ui/core  import Grid,MediaCard{ makeStyles }
 ====================================================================
-
-
-
+<BasicHook>
+===> const [$todos[{title,text,done}], setTodos] = React.useState()
+===> const addTodo() => setTodos()
+===> const delTodo() => setTodos()
+===> const handleChangeTitle() => e.target.value,setTodos()
+===> const handleChangeText() => e.target.value,setTodos()
+$todos.map todo
+  <TodoForm todo, addTodo(), delTodo(), handleChangeTitle(), handleChangeText()>
+    <Form> 
+      <input>title
+      <input>text
+      <input>done
+      <submit>
+======================================================================
 
 
 
