@@ -35,7 +35,7 @@
    <Route>
                      0  / ===>            <Pixagridlist $titleData/>
                      1  /form ===>        <FormView $jsphd handleJSPJD() handleLoadJson>   
-                     2  /contact ===>     <Component/>
+                     2  /contact ===>     <Contact/>
                      3  /basichook ===>   <Basichook/>
                      4  /old  ===>        <Test1/>
                      5  /advanceform ===> <AdvanceFormView/>
