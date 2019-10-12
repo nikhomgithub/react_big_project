@@ -15,9 +15,15 @@
   }
 
 
-<Navbar/>,<Tabbar/> ===> <App/>
+<Navbar/>,<Tabbar/> ===> <App/> ===> <BrowserRouter><Route>
 ===> handleChange()=>{set $pagevalue }
                  
+<Navbar/> ===> <App/>  ===> <Pixagridlist/>
+===> handleSearch()=>{get $searchtext,$searchnumber => get https://pixabay.com => set $tileData}  
+
+<FormView/> ===> <App/> ===> <FormView/>
+===> handleLoadjson()=>{get https://jsonplaceholder} => set $jsphd 
+
 
 <App/> render()
 <section/>
@@ -25,7 +31,8 @@
 <Tabbar $pagevalue,hanldeChange() />
 ===> handleRoute()=>{get $pagevalue , 
                      switch & redirect to & 
-                                      <BrowserRouter><Route>
+<BrowserRouter>
+   <Route>
                      0  / ===>            <Pixagridlist $titleData/>
                      1  /form ===>        <FormView $jsphd handleJSPJD() handleLoadJson>   
                      2  /contact ===>     <Component/>
@@ -35,14 +42,26 @@
                      6  /materialcss ===> <Materialcss/>     
                      7  /dom
 <button/>
+==================================================================
+<FormView/>   from '@material-ui/core  import Grid,TextField,Card,Button,{ makeStyles }
+
+===>useStyle()=>{makeStyles()}
+<Button onClick=handleLoadJson() > 
+$jsphd.maps m
+  <Card>
+    <Grid> <TextArea> m.userId
+    <Grid> <TextArea> m.id
+    <Grid> <TextArea> m.title
+    <Grid> <TextArea> m.body
+====================================================================
 
 
 
 
-<Navbar/> ===> <App/>
-===> handleSearch()=>{get $searchtext,$searchnumber => get https://pixabay.com => set $tileData}  
 
 
-<BrowserRouter>
-   <Route/> /
-   
+
+
+
+
+
